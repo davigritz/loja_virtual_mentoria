@@ -22,7 +22,7 @@ public class Categoria implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_categoria")
 	private Long id;
 
-	@Column(length = 50)
+	@Column(length = 50, nullable = false)
 	private String descricao;
 
 	public Long getId() {
